@@ -1,11 +1,11 @@
-def find_element_index(array, value_to_find)
+def find_max_value(array)
   count = 0
-  found_value_index = nil
+  max_value = -1
   while count < array.length do
-    if array[count] == value_to_find
-      found_value_index = count
+    if max_value < array[count]
+      max_value = array[count]
     end
     count += 1
   end
-  found_value_index
+  max_value
 end
